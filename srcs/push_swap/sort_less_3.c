@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/15 10:27:10 by user42            #+#    #+#             */
-/*   Updated: 2021/03/16 16:40:38 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/17 12:00:25 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,5 @@ static void	helper_2(t_stack *stack_a, t_stack *stack_b)
 void	sort_stack_less_3(t_stack *stack_a, t_stack *stack_b)
 {
 	helper_1(stack_a, stack_b);
-	helper_2(stack_a, stack_b);	
+	helper_2(stack_a, stack_b);
 }

@@ -14,8 +14,8 @@ printf "\n\n${CYAN}TESTS FOR 2 INTEGRERS${NC}\n\n"
 
 
 for ((i = 0; i < 20; i++)); do
-	a=$(ARG=$(./stackgen.pl 2 -2147483648 2147483647); ./push_swap $(echo $ARG) | wc -l)
-	b=$(ARG=$(./stackgen.pl 2 -2147483648 2147483647); ./push_swap $(echo $ARG) | ./checker $(echo $ARG))
+	a=$(ARG=$(./stackgen.pl 2 -2147483648 2147483647); ./push_swap $ARG | wc -l)
+	b=$(ARG=$(./stackgen.pl 2 -2147483648 2147483647); ./push_swap $ARG | ./checker $ARG)
 	echo "Test n°$i:	$a -- $b"
 	total=$(($total + $a))
 	if [[ "$b" != "OK" ]]; then
@@ -42,8 +42,8 @@ printf "\n\n${CYAN}TESTS FOR 3 INTEGRERS${NC}\n\n"
 
 
 for ((i = 0; i < 20; i++)); do
-	a=$(ARG=$(./stackgen.pl 3 -2147483648 2147483647); ./push_swap $(echo $ARG) | wc -l)
-	b=$(ARG=$(./stackgen.pl 3 -2147483648 2147483647); ./push_swap $(echo $ARG) | ./checker $(echo $ARG))
+	a=$(ARG=$(./stackgen.pl 3 -2147483648 2147483647); ./push_swap $ARG | wc -l)
+	b=$(ARG=$(./stackgen.pl 3 -2147483648 2147483647); ./push_swap $ARG | ./checker $ARG)
 	echo "Test n°$i:	$a -- $b"
 	total=$(($total + $a))
 	if [[ "$b" != "OK" ]]; then
@@ -69,8 +69,8 @@ printf "\n\n${CYAN}TESTS FOR 5 INTEGRERS${NC}\n\n"
 
 
 for ((i = 0; i < 20; i++)); do
-	a=$(ARG=$(./stackgen.pl 5 -2147483648 2147483647); ./push_swap $(echo $ARG) | wc -l)
-	b=$(ARG=$(./stackgen.pl 5 -2147483648 2147483647); ./push_swap $(echo $ARG) | ./checker $(echo $ARG))
+	a=$(ARG=$(./stackgen.pl 5 -2147483648 2147483647); ./push_swap $ARG | wc -l)
+	b=$(ARG=$(./stackgen.pl 5 -2147483648 2147483647); ./push_swap $ARG | ./checker $ARG)
 	echo "Test n°$i:	$a -- $b"
 	total=$(($total + $a))
 	if [[ "$b" != "OK" ]]; then
@@ -96,8 +96,8 @@ printf "\n\n${CYAN}TESTS FOR 100 INTEGRERS${NC}\n\n"
 
 
 for ((i = 0; i < 20; i++)); do
-	a=$(ARG=$(./stackgen.pl 100 -2147483648 2147483647); ./push_swap $(echo $ARG) | wc -l)
-	b=$(ARG=$(./stackgen.pl 100 -2147483648 2147483647); ./push_swap $(echo $ARG) | ./checker $(echo $ARG))
+	a=$(ARG=$(./stackgen.pl 100 -2147483648 2147483647); ./push_swap $ARG | wc -l)
+	b=$(ARG=$(./stackgen.pl 100 -2147483648 2147483647); ./push_swap $ARG | ./checker $ARG)
 	echo "Test n°$i:	$a -- $b"
 	total=$(($total + $a))
 	if [[ "$b" != "OK" ]]; then
@@ -123,8 +123,8 @@ printf "\n\n${CYAN}TESTS FOR 500 INTEGRERS${NC}\n\n"
 
 
 for ((i = 0; i < 20; i++)); do
-	a=$(ARG=$(./stackgen.pl 500 -2147483648 2147483647); ./push_swap $(echo $ARG) | wc -l)
-	b=$(ARG=$(./stackgen.pl 500 -2147483648 2147483647); ./push_swap $(echo $ARG) | ./checker $(echo $ARG))
+	a=$(ARG=$(./stackgen.pl 500 -2147483648 2147483647); ./push_swap $ARG | wc -l)
+	b=$(ARG=$(./stackgen.pl 500 -2147483648 2147483647); ./push_swap $ARG | ./checker $ARG)
 	echo "Test n°$i:	$a -- $b"
 	total=$(($total + $a))
 	if [[ "$b" != "OK" ]]; then

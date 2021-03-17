@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/15 10:40:33 by user42            #+#    #+#             */
-/*   Updated: 2021/03/15 10:59:39 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/17 11:37:55 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	sort_stack_less_50(t_stack *stack_a, t_stack *stack_b)
 	{
 		smallest = find_smallest(stack_a);
 		position = find_pos(stack_a, smallest);
-		move_to_top(stack_a, stack_b, smallest, position);
+		move_top(stack_a, stack_b, smallest, position);
 		printf("pb\n");
 		exec(stack_a, stack_b, "pb");
 	}

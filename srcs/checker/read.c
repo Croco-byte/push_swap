@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/12 13:24:19 by user42            #+#    #+#             */
-/*   Updated: 2021/03/16 16:30:33 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/17 11:43:32 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,9 @@ static int	valid_inst(char *str)
 	if (!str)
 		return (1);
 	if (!ft_strcmp(str, "sa") || !ft_strcmp(str, "sb") || !ft_strcmp(str, "ss")
-		|| !ft_strcmp(str, "pa") || !ft_strcmp(str, "pb") || !ft_strcmp(str, "ra")
-		|| !ft_strcmp(str, "rb") || !ft_strcmp(str, "rr") || !ft_strcmp(str, "rra")
+		|| !ft_strcmp(str, "pa") || !ft_strcmp(str, "pb")
+		|| !ft_strcmp(str, "ra") || !ft_strcmp(str, "rb")
+		|| !ft_strcmp(str, "rr") || !ft_strcmp(str, "rra")
 		|| !ft_strcmp(str, "rrb") || !ft_strcmp(str, "rrr"))
 		return (1);
 	return (0);

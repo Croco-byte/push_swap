@@ -6,13 +6,13 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/15 10:26:35 by user42            #+#    #+#             */
-/*   Updated: 2021/03/15 12:20:58 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/17 12:02:06 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int		find_smallest(t_stack *stack)
+int	find_smallest(t_stack *stack)
 {
 	int	i;
 	int	smallest;
@@ -28,7 +28,7 @@ int		find_smallest(t_stack *stack)
 	return (smallest);
 }
 
-int		find_largest(t_stack *stack)
+int	find_largest(t_stack *stack)
 {
 	int	i;
 	int	largest;
@@ -44,7 +44,7 @@ int		find_largest(t_stack *stack)
 	return (largest);
 }
 
-int		find_pos(t_stack *stack, int value)
+int	find_pos(t_stack *stack, int value)
 {
 	int	i;
 
@@ -58,41 +58,7 @@ int		find_pos(t_stack *stack, int value)
 	return (-1);
 }
 
-void	move_to_top(t_stack *stack_a, t_stack *stack_b, int value, int position)
-{
-	while (stack_a->array[stack_a->top] != value)
-	{
-		if (position > stack_a->top / 2)
-		{
-			printf("ra\n");
-			exec(stack_a, stack_b, "ra");
-		}
-		else if (position <= stack_a->top / 2)
-		{
-			printf("rra\n");
-			exec(stack_a, stack_b, "rra");
-		}
-	}
-}
-
-void	move_to_top2(t_stack *stack_a, t_stack *stack_b, int value, int position)
-{
-	while (stack_b->array[stack_b->top] != value)
-	{
-		if (position > stack_b->top / 2)
-		{
-			printf("rb\n");
-			exec(stack_a, stack_b, "rb");
-		}
-		else if (position <= stack_b->top / 2)
-		{
-			printf("rrb\n");
-			exec(stack_a, stack_b, "rrb");
-		}
-	}
-}
-
-int		is_sorted(t_stack *stack)
+int	is_sorted(t_stack *stack)
 {
 	int	i;
 

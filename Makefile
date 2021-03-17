@@ -6,7 +6,7 @@
 #    By: user42 <user42@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/05 15:18:35 by user42            #+#    #+#              #
-#    Updated: 2021/03/16 16:44:49 by user42           ###   ########.fr        #
+#    Updated: 2021/03/17 12:02:21 by user42           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,8 @@ LIBFT = -L libft -lft
 
 HEADER = push_swap.h
 
-COMMONFILES = errors stack utils instructions
-PUSHFILES = push_swap sort sort_utils sort_stack_less_2 sort_less_3 sort_less_50 sort_less_200 sort_more_200 big_utils big_utils2
+COMMONFILES = errors stack stack2 utils instr instr2
+PUSHFILES = push_swap sort sort_utils sort_utils2 sort_stack_less_2 sort_less_3 sort_less_50 sort_less_200 sort_more_200 big_utils big_utils2
 CHECKFILES = checker read
 
 COMMONSRCS = $(addsuffix .c, $(addprefix srcs/common/, $(COMMONFILES)))

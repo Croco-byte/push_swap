@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/12 11:44:41 by user42            #+#    #+#             */
-/*   Updated: 2021/03/16 14:33:52 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/17 11:44:06 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	free_strarray(char **array)
 	}
 }
 
-int	clean_and_quit(int type, t_stack *stack_a, t_stack *stack_b, char **instr)
+int	clean_quit(int type, t_stack *stack_a, t_stack *stack_b, char **instr)
 {
 	if (instr)
 		free_strarray(instr);
@@ -41,7 +41,7 @@ int	clean_and_quit(int type, t_stack *stack_a, t_stack *stack_b, char **instr)
 	return (0);
 }
 
-int		check_num(char *str)
+int	check_num(char *str)
 {
 	int	i;
 
@@ -53,16 +53,13 @@ int		check_num(char *str)
 	while (str[i])
 	{
 		if (str[i] < '0' || str[i] > '9')
-		{
-			printf("str[i] is %c\n", str[i]);
 			return (0);
-		}
 		i++;
 	}
 	return (1);
 }
 
-int		check_arg(int argc, char **argv)
+int	check_arg(int argc, char **argv)
 {
 	int		i;
 	long	temp;
@@ -80,7 +77,7 @@ int		check_arg(int argc, char **argv)
 	return (1);
 }
 
-int		check_duplicate(int	*result, int size)
+int	check_duplicate(int	*result, int size)
 {
 	int		i;
 	int		j;
