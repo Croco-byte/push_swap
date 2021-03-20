@@ -6,7 +6,7 @@
 /*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/11 15:55:36 by user42            #+#    #+#             */
-/*   Updated: 2021/03/17 11:59:53 by user42           ###   ########.fr       */
+/*   Updated: 2021/03/17 15:09:44 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ int	main(int argc, char **argv)
 	stack_b = create_stack(argc - 1);
 	if (!stack_a || !stack_b || !build_stack(argc, argv, stack_a))
 		return (clean_quit(1, stack_a, stack_b, 0));
-	sort_stack(stack_a, stack_b, argc - 1);
+	if (!is_sorted(stack_a))
+		sort_stack(stack_a, stack_b, argc - 1);
 	clean_quit(0, stack_a, stack_b, 0);
 	return (0);
 }
